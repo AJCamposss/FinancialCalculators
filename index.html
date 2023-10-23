@@ -13,80 +13,83 @@
     />
   </head>
   <body>
+
     <main>
-      <h1>Mortgage Calculator</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-1">
-            <label for="Number2">Principal Amount</label>
-          </div>
-          <div class="col-md-1">
-            <input
-              class="form-control"
-              type="text"
-              name="principal"
-              id="principal"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1"><label for="Number2">Interest Rate</label></div>
-          <div class="col-md-1">
-            <input
-              class="form-control"
-              type="text"
-              name="interest"
-              id="interest"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1"><label for="Number2">Loan Length</label></div>
-          <div class="col-md-1">
-            <input
-              class="form-control"
-              type="text"
-              name="loanLength"
-              id="loanLength"
-            />
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-                <input class="btn btn-light" type="submit" value="submit" id="submitBtn">
-            </div>
-
-          <div class="row">
+        <h1>Mortgage Calculator</h1>
+        <div class="container">
+          <div class="row mb-3">
             <div class="col-md-1">
-              <label for="Number2">Monthly Payments</label>
+              <label for="principal">Principal Amount</label>
             </div>
             <div class="col-md-1">
               <input
                 class="form-control"
                 type="text"
-                name="monthlyPayments"
-                id="monthlyPayments"
-                disabled
+                name="principal"
+                id="principal"
               />
             </div>
           </div>
-
-
-          <div class="row">
-            <div class="col-md-1"><label for="Number2">Total Interest Paid</label></div>
+          <div class="row mb-3">
+            <div class="col-md-1"><label for="interest">Interest Rate</label></div>
             <div class="col-md-1">
               <input
                 class="form-control"
                 type="text"
-                name="totalInterestPaid"
-                id="totalInterestPaid"
-                disabled
+                name="interest"
+                id="interest"
               />
             </div>
           </div>
+          <div class="row mb-3">
+            <div class="col-md-1"><label for="loanLength">Loan Length</label></div>
+            <div class="col-md-1">
+              <input
+                class="form-control"
+                type="text"
+                name="loanLength"
+                id="loanLength"
+              />
+            </div>
+          </div>
+    
+            <div class="row mb-3">
+              <div class="col-md-12">
+                  <input class="btn btn-light" type="submit" value="submit" id="submitBtn">
+              </div>
+              </div>
+    
+            <div class="row mb-3">
+              <div class="col-md-1">
+                <label for="monthlyPayments">Monthly Payment</label>
+              </div>
+              <div class="col-md-1">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="monthlyPayments"
+                  id="monthlyPayments"
+                  disabled
+                />
+              </div>
+            </div>
+    
+    
+            <div class="row">
+              <div class="col-md-1"><label for="totalInterestPaid">Total Interest Paid</label></div>
+              <div class="col-md-1">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="totalInterestPaid"
+                  id="totalInterestPaid"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
 
     <script src="scripts/Mortgage_Calculator.js"></script>
   </body>
